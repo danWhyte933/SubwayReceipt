@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subway Receipt</title>
+
+    <style type="text/css">
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
+
+
+        body {
+			margin: 0;
+			background-color: #cccccc;
+		}
+		table {
+			border-spacing: 0;
+		}
+		td {
+			padding: 0;
+		}
+		img {
+			border: 0;
+		}
+
+        
+
+        .main {
+            margin: 0 auto;
+			width: 100%;
+			max-width: 600px;
+			background-color: #ffffff;
+			border-spacing: 0;
+            text-align: center;
+			font-family: 'Roboto Condensed', sans-serif;
+		    font-size: 15px;
+			color: 4a4a4a;
+            position: relative;
+        }
+
+        .wrapper {
+			width: 100%;
+			table-layout: fixed;
+			background-color: #cccccc;
+			padding-bottom: 40px;			
+
+		}
+
+        .confirmation {
+            table-layout: auto;
+            width: 300px;
+            border: 0px;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            color: #ffffff;
+            background-color: #008C15;
+            
+            border-collapse:separate;
+            border:solid 1px;
+            border-radius: 6px;
+            
+            
+            
+        }
+
+        .confirmation .confirmation-table {
+             
+            padding: 8px;
+            border: 0.2px solid gray;
+           
+        }
+
+        .Express-pickup {
+
+            padding-top: 25px;
+            table-layout: auto;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+
+        }
+
+        .order {
+            
+            border-collapse: collapse;
+            table-layout: auto;
+            width: 300px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .order .order-row {
+
+            margin-left: auto;
+            margin-right: auto;
+            color: #808080;
+            border-top: 1px solid #808080;
+            border-bottom: 1px solid #808080;
+        }
+
+                  
+        
+      
+      
+
+    </style>
+</head>
+<body>
+    
+    <center class="wrapper">
+        <table class="main" align="center">
+
+    <!-- Header with view in browser and find restaurant -->
+    <tr>
+		<td>
+            <a href="#"><img src="https://live.staticflickr.com/65535/52777726680_d187838b37_o.jpg" alt="banner" height="170px"></a>
+		</td>
+	 </tr>
+
+
+    <!-- Andrew, deliciousness is being prepared -->
+
+    <tr>
+        <td>
+            <table width="100%">
+                <p style="font-size: 20px; color:#008C15;">Andrew</p>
+                <p style="font-size: 30px; color:#008C15;">Success, deliciousness is being prepared!</p>
+            </table>
+        </td>
+    </tr>
+
+
+    <!-- Confirmation with date and address -->
+
+    <tr>
+        <td>
+                <table class="confirmation">
+                    <thead>
+                        <th class="confirmation-table" style="background-color: #FFC600;" colspan="3">Order confirmation</th>
+                        
+                    </thead>
+                    <tbody class="confirmation-table">
+                        <tr >
+                            
+                            <td class="confirmation-table">Order # ABC-123</td>
+                            <td class="confirmation-table">Order date 15/03/2023</td>
+                            <td class="confirmation-table">Pickup Wed, 15th March at 09:33</td>
+                        </tr>
+                        <tr>
+                            <td class="confirmation-table" colspan="3" style="padding: 20px;">
+                                Address 12 Moortown Road
+                                                              
+                                </td>
+                        </tr>
+                        <tr>
+                            <td class="confirmation-table" colspan="3">Payment approval # 12345</td>
+                        </tr>
+                    </tbody>
+
+
+            </table>
+        </td>
+    </tr>
+
+
+    <!-- Express pick up sign link -->
+    <tr>
+        <td>
+            <table class="Express-pickup">
+                <td>
+                <a href="#"><img src="https://live.staticflickr.com/65535/52776785552_70a4f89488_o.png" alt="avocado" style="height: 50px; padding-right: 10px;"></a>  
+                </td>
+                <td>
+                <p>Look out for <span style="color: #008C15; font-size: 18px;">express pickup </span>sign in restaurant</p>
+                </td>
+            </table>
+        </td>
+    </tr>
+
+
+
+    
+
+    <!-- Your order with break down -->
+
+    <tr>
+        <td>
+            <table style="margin-left: auto; margin-right: auto;">
+                <p style="color: #008C15; font-size:18px;">Your Order</p>
+                <table class="order" style="border-collapse: collapse;">
+                    <tr class="order-row">
+                        <th style="text-align: left; padding: 20px;">ITEM</th>
+                        <th style="padding: 20px;">QTY</th>
+                        <th style="padding: 20px;">PRICE</th>
+                        <th style="text-align: right; padding: 20px;">AMOUNT</th>
+                    </tr>
+                    <tr class="order-row">
+                        <td style="text-align: left; padding: 20px;">Burger</td>
+                        <td style="padding: 20px;">1</td>
+                        <td style="padding: 20px;">$3.50</td>
+                        <td style="text-align: right; padding: 20px;">$3.50</td>
+                    </tr>
+                    <tr class="order-row">
+                    <td  style="text-align: left; padding: 20px;">Sandwich</td>
+                    <td style="padding: 20px;">1</td>
+                    <td style="padding: 20px;">$2.80</td>
+                    <td style="text-align: right; padding: 20px;">$2.80</td>
+                    </tr>
+                </table>
+            </table>
+        </td>
+    </tr>
+
+
+    </table>
+
+
+    </center>
+    
+
+</body>
+</html>
